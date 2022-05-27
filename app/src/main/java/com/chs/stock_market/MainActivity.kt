@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavGraph
 import androidx.navigation.Navigation
+import com.chs.stock_market.presentation.NavGraphs
 import com.chs.stock_market.ui.theme.Stock_marketTheme
 import com.ramcosta.composedestinations.DestinationsNavHost
 import dagger.hilt.android.AndroidEntryPoint
@@ -26,7 +27,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-//                    DestinationsNavHost(navGraph = NavGr
+                    DestinationsNavHost(navGraph = NavGraphs.root)
                 }
             }
         }
